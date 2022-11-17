@@ -11,7 +11,7 @@ namespace Day6LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Programs");
-            Console.WriteLine("enter the option\n1. Fibonacci Series\n2.Perfect Number");
+            Console.WriteLine("enter the option\n1. Fibonacci Series\n2.Perfect Number\n3.Prime Number");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -24,6 +24,11 @@ namespace Day6LogicalPrograms
                     Console.WriteLine("enter a number");
                     int perNum=Convert.ToInt32(Console.ReadLine());
                     PerfectNumber.perfectNumber(perNum);
+                    break;
+                case 3:
+                    Console.WriteLine("enter a number");
+                    int primeChk = Convert.ToInt32(Console.ReadLine());
+                    PrimeNumber.primeNumber(primeChk);
                     break;
             }
             Console.ReadLine();
