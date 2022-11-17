@@ -11,7 +11,7 @@ namespace Day6LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Programs");
-            Console.WriteLine("enter the option\n1. Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse a number");
+            Console.WriteLine("enter the option\n1. Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse a number\n5.Stop Watch");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -34,6 +34,9 @@ namespace Day6LogicalPrograms
                     Console.WriteLine("enter a number");
                     int reverseNum=Convert.ToInt32(Console.ReadLine());
                     ReverseNumber.reverseNumber(reverseNum);
+                    break;
+                case 5:
+                    stopWatch.timer();
                     break;
             }
             Console.ReadLine();
